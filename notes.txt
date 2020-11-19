@@ -1,0 +1,30 @@
+Navbar (3 elements)
+---logo
+---Links
+---CTA
+
+Hero (2 elements)
+---Info/Header
+---background image
+
+Why (2 elements)
+---Why choose
+---4 columns
+
+Articles (1 element)
+---4 cards
+
+Footer (4 elements)
+---c1 logo/Links
+---c2 links1
+---c3 links2
+---CTA / copyright
+
+
+util
+---CTAs
+---Max Width / centered
+
+Extras
+-there a max width for content and 100% body width for backgrounds
+-each of the 4 columns and cards are lined up with each other.
