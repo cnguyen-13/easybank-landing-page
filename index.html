@@ -8,29 +8,41 @@
   <link rel="stylesheet" href="./styles/styles.css">
   <title>Frontend Mentor | Easybank landing page</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous" defer></script>
+  <script src="nav.js" defer></script>
   <script src="./animations.js" defer></script>
 </head>
 <body>
+
+  <!-- Navbar -->
   <header class="nav bg-white">
     <div class="nav-content max-width-inner">
       <img src="./images/logo.svg" alt="Easybank Logo">
-      <img src="./images/icon-hamburger.svg" alt="" srcset="">
-    </div>
-    Home
-    About
-    Contact
-    Blog
-    Careers
+      <img class="nav-control" src="./images/icon-hamburger.svg" alt="" srcset="">
+      <nav class="nav-menu bg-white">
+        <ul class="nav-menu-list">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Careers</a></li>
+        </ul>
+      </nav>
   
-    Request Invite
+      <button class="cta nav-cta">Request Invite</button>
+    </div>
+    <div class="mask"></div>
   </header>
-  <section>
+
+  <!-- Intro -->
+  <section id="intro">
     <h1>Next generation digital banking</h1>
     <p>Take your financial life online. Your Easybank account will be a one-stop-shop 
       for spending, saving, budgeting, investing, and much more.</p>
       <button class="cta">Request Invite</button>
   </section>
-  <section class="bg-mid">
+
+  <!-- Reasons-->
+  <section id="reasons" class="bg-mid">
     <div class="max-width-inner">
       <div>
         <h2>Why choose Easybank?</h2>
@@ -64,9 +76,9 @@
         </div>
       </div>
     </div>
-    
   </section>
 
+  <!-- Articles -->
   <section id="articles">
     <div class="max-width-inner">
       <h2>Latest Articles</h2>
@@ -101,10 +113,10 @@
         </div>
       </div>
     </div>
-   
   </section>
 
-  <footer class="bg-footer">
+  <!-- Footer-->
+  <footer id="footer" class="bg-footer">
     <div class="max-width-inner">
       <div class="footer-content">
         <div class="col-1">
@@ -133,7 +145,7 @@
         </div>
       </div>
     </div>
-    
   </footer>
+  
 </body>
 </html>
