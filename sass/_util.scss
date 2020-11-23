@@ -4,12 +4,12 @@
 
 .bg-general {
     color: $color-primary;
-    background-color: $color-gray-blue-slt;
+    background-color: #fafafa;
 }
 
 .bg-mid {
     color: $color-primary;
-    background-color: $color-gray-blue-lt;
+    background-color: #f4f5f7;
 }
 
 .bg-footer {
@@ -19,10 +19,14 @@
 
 .cta {
     font-weight: bold;
-    padding: 1rem 2rem;
+    padding: 1rem 2.5rem;
     border-radius: 2rem;
     color: $color-white;
-    background: linear-gradient(to right, $color-linear-left, $color-linear-right);
+    background: linear-gradient(
+        to right,
+        $color-linear-left,
+        $color-linear-right
+    );
 }
 
 .max-width-inner {
@@ -33,4 +37,10 @@
 
 .unscrollable {
     overflow-y: hidden;
+}
+
+@media (min-width: 1440px) {
+    .unscrollable {
+        overflow-y: auto;
+    }
 }

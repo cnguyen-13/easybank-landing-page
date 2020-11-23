@@ -1,0 +1,46 @@
+// #intro,
+// #reasons,
+// #articles {
+//     position: relative;
+//     top: -6vh;
+// }
+
+#reasons {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+
+.reasons-main-text {
+    h2 {
+        line-height: normal;
+        font-weight: 300;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin-bottom: 4rem;
+    }
+}
+
+.reasons-content {
+    text-align: center;
+}
+
+.reasons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.reason {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+
+    h3 {
+        font-weight: 300;
+    }
+}

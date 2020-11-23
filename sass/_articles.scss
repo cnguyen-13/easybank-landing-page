@@ -1,3 +1,52 @@
 img.article-img {
     width: 100%;
 }
+
+.articles-content {
+    padding-top: 5rem;
+
+    h2 {
+        font-weight: 300;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+
+.articles-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 5rem;
+}
+
+.article {
+    border-radius: 0.4rem;
+
+    img {
+        border-top-left-radius: 0.4rem;
+        border-top-right-radius: 0.4rem;
+    }
+
+    .article-text {
+        padding: 1.5rem;
+        padding-bottom: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        .article-author {
+            font-size: 0.75rem;
+        }
+
+        .article-title {
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: normal;
+        }
+
+        .article-description {
+            font-size: 0.8rem;
+        }
+    }
+}
