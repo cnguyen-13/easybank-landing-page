@@ -1,0 +1,44 @@
+.hero-images {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.hero-image-1,
+.hero-image-2 {
+    display: block;
+}
+
+.hero-image-1 {
+    width: 100%;
+}
+
+.hero-image-2 {
+    z-index: 2;
+    width: 90%;
+    position: absolute;
+    bottom: 14%;
+}
+
+//intro
+.intro-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    padding-bottom: 5rem;
+
+    h1 {
+        line-height: normal;
+        font-weight: 300;
+        font-size: 2.5rem;
+    }
+
+    .cta {
+        margin-top: 1rem;
+    }
+}
