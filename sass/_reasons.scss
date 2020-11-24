@@ -4,13 +4,14 @@
 }
 
 .reasons-main-text {
+    text-align: center;
+
     h2 {
         margin-bottom: 1rem;
     }
 
     .reasons-lead-p {
         margin-bottom: 4rem;
-        text-align: center;
     }
 }
 
@@ -29,4 +30,21 @@
     }
 }
 
-@media (min-width: 1440px) {}
+@media (min-width: 1440px) {
+    .reasons-main-text {
+        width: 50%;
+        text-align: left;
+    }
+
+    .reasons-container {
+        flex-direction: row;
+        text-align: left;
+
+        .reason {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 1.25rem;
+        }
+    }
+}
