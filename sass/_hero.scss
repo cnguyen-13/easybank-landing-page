@@ -32,13 +32,9 @@
     gap: 1.25rem;
     padding-bottom: 5rem;
 
-    h1 {
-        line-height: normal;
-        font-weight: 300;
-        font-size: 2.5rem;
-    }
-
     .cta {
         margin-top: 1rem;
     }
 }
+
+@media (min-width: 1440px) {}

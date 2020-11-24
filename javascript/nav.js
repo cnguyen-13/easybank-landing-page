@@ -2,18 +2,18 @@ const navControl = document.querySelector('.nav-control');
 const navMenu = document.querySelector('.nav-menu');
 const mask = document.querySelector('.mask');
 const body = document.querySelector('body');
+let isActive = false;
 
-//GSAP Code Here
+//GSAP Timeline
+const timeline = gsap.timeline({paused: true, delay: 0.3});
+timeline.to('.mask', {y: 0, duration: 0.3})
+.to('.nav-menu', {x: 0, opacity: 1, duration: 0.3})
 
-function toggleScrollable() {
+const toggleScrollable = () => {
     body.classList.toggle('unscrollable');
 }
 
-function toggleNavMenu() {
-    navMenu.classList.toggle('nav-menu-active');
-}
-
-function toggleNavImage() {
+const toggleNavImage = () => {
     const src = navControl.src;
     const splitSrc = src.split('/');
     const idxLast = splitSrc.length - 1;
@@ -25,16 +25,21 @@ function toggleNavImage() {
     navControl.src = splitSrc.join('/');
 }
 
-function toggleMask() {
-    mask.classList.toggle('mask-active');
+const toggleActives = () => {
+    if (!isActive) {
+        timeline.play();
+    } else {
+        timeline.reverse();
+    }
+    isActive = !isActive;
 }
 
-function menuClick() {
-    toggleNavMenu();
+const menuClick = () => {
     toggleNavImage();
     toggleScrollable();
-    toggleMask();
+    toggleActives();
 }
+
 
 navControl.addEventListener('click', menuClick);
 mask.addEventListener('click', menuClick);
