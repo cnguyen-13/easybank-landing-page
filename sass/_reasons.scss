@@ -1,0 +1,51 @@
+#reasons {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    position: relative;
+    z-index: 2;
+}
+
+.reasons-main-text {
+    text-align: center;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    .reasons-lead-p {
+        margin-bottom: 4rem;
+    }
+}
+
+.reasons-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+
+    .reason {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.25rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .reasons-main-text {
+        width: 50%;
+        text-align: left;
+    }
+
+    .reasons-container {
+        flex-direction: row;
+        text-align: left;
+
+        .reason {
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 2rem;
+        }
+    }
+}

@@ -1,52 +1,52 @@
-img.article-img {
-    width: 100%;
-}
-
 .articles-content {
     padding-top: 5rem;
 
     h2 {
-        font-weight: 300;
-        font-size: 2rem;
-        text-align: center;
         margin-bottom: 2rem;
     }
-}
 
-.articles-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding-bottom: 5rem;
-}
-
-.article {
-    border-radius: 0.4rem;
-
-    img {
-        border-top-left-radius: 0.4rem;
-        border-top-right-radius: 0.4rem;
-    }
-
-    .article-text {
-        padding: 1.5rem;
-        padding-bottom: 2.5rem;
+    .articles-container {
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 2rem;
+        padding-bottom: 5rem;
 
-        .article-author {
-            font-size: 0.7rem;
-        }
+        .article {
+            .article-img {
+                width: 100%;
+            }
 
-        .article-title {
-            font-weight: 400;
-            font-size: 1rem;
-            line-height: normal;
-        }
+            .article-text {
+                padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
 
-        .article-description {
-            font-size: 0.8rem;
+                .article-author {
+                    font-size: 0.7rem;
+                }
+
+                .article-title {
+                    font-weight: 400;
+                    font-size: 1rem;
+                }
+
+                .article-description {
+                    font-size: 0.8rem;
+                }
+            }
         }
+    }
+}
+
+@media (min-width: 1440px) {
+    .articles-content {
+        .articles-container {
+            flex-direction: row;
+        }
+    }
+
+    .article-img {
+        max-height: 181px;
     }
 }

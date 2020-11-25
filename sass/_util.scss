@@ -4,7 +4,6 @@
 }
 
 .bg-general {
-    color: $color-primary;
     background-color: #fafafa;
 }
 
@@ -29,6 +28,31 @@
     color: $color-gray-blue-lt;
 }
 
+.txt-nav-links {
+    color: $color-primary;
+}
+
+//Border Radius
+.article-br {
+    border-radius: $article-border-radius;
+}
+
+.article-img-br {
+    border-top-left-radius: $article-border-radius;
+    border-top-right-radius: $article-border-radius;
+}
+
+//Headers
+.h1-main-header {
+    line-height: normal;
+    font-size: 2.5rem;
+}
+
+.h2-sub-headers {
+    line-height: normal;
+    font-size: 2rem;
+}
+
 //Call to Actions
 .cta {
     font-size: 1rem;
@@ -38,6 +62,18 @@
     background: linear-gradient(to right,
             $color-linear-left,
             $color-linear-right);
+}
+
+//Mask
+.mask {
+    position: fixed;
+    z-index: 3;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    opacity: 0.6;
+    transform: translateY(-108vh);
+    transition: transform 0.3s ease-out;
 }
 
 //Others
@@ -52,7 +88,19 @@
 }
 
 @media (min-width: 1440px) {
+    .cta {
+        padding: 0.75rem 2rem;
+    }
+
     .unscrollable {
         overflow-y: auto;
+    }
+
+    .mask {
+        transform: translateY(-100vh);
+    }
+
+    .txt-nav-links {
+        color: $color-gray-blue;
     }
 }
