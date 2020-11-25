@@ -1,81 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./images/favicon-32x32.png"
-        />
-        <link rel="stylesheet" href="./styles/styles.css" />
-        <title>Frontend Mentor | Easybank landing page</title>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
-            integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
-            crossorigin="anonymous"
-            defer
-        ></script>
-        <script src="./javascript/nav.js" defer></script>
-        <script src="./javascript/animations.js" defer></script>
-    </head>
-    <body>
-        <!-- Navbar -->
-        <header class="nav bg-white">
-            <div class="nav-content max-width-inner">
-                <img src="./images/logo.svg" alt="Easybank Logo" />
-                <img
-                    class="nav-control"
-                    src="./images/icon-hamburger.svg"
-                    alt="Menu Button"
-                />
-                <nav class="nav-menu bg-white article-br">
-                    <ul class="nav-menu-list">
-                        <li><a href="" class="txt-nav-links">Home</a></li>
-                        <li><a href="" class="txt-nav-links">About</a></li>
-                        <li><a href="" class="txt-nav-links">Contact</a></li>
-                        <li><a href="" class="txt-nav-links">Blog</a></li>
-                        <li><a href="" class="txt-nav-links">Careers</a></li>
-                    </ul>
-                </nav>
-
-                <a href="#" class="cta nav-cta" role="button">Request Invite</a>
-            </div>
-        </header>
-
-        <!-- MASK -->
-        <div class="mask"></div>
-
-        <!-- Hero Images -->
-
-        <!-- Intro -->
-        <section id="intro" class="bg-general mobile-section-padding">
-            <div class="hero-images bg-general">
-                <img
-                    class="hero-image-1"
-                    src="./images/bg-intro-mobile.svg"
-                    alt="Background"
-                />
-                <img class="hero-image-2" src="./images/image-mockups.png" alt="Mockup Background" />
-            </div>
-            <div class="intro-content max-width-inner">
-                    <h1 class="txt-color-primary h1-main-header">
-                        Next generation digital banking
-                    </h1>
-                    <p class="txt-color-gb">
-                        Take your financial life online. Your Easybank account will
-                        be a one-stop-shop for spending, saving, budgeting,
-                        investing, and much more.
-                    </p>
-                    <a href="#" class="cta" role="button">Request Invite</a>
-            </div>
-            <img class="background-bg"src="./images/bg-intro-desktop.svg" alt="">
-            
-        </section>
-        <img class="foreground-bg"src="./images/image-mockups.png" alt="">
-
-        <!-- Reasons-->
+<!-- Reasons-->
         <section id="reasons" class="bg-mid">
             <div class="reasons-content max-width-inner">
                 <div class="reasons-main-text">
@@ -274,5 +197,3 @@
              
             </div>
         </footer>
-    </body>
-</html>
