@@ -1,0 +1,55 @@
+#intro {
+    padding-bottom: 5rem;
+}
+
+.intro-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+
+    .cta {
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    #intro {
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 0rem;
+        min-height: 700px;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .intro-content {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 2rem;
+        padding-bottom: 0;
+
+        h1,
+        p {
+            width: 37%;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .cta {
+            margin-top: 0rem;
+        }
+    }
+}

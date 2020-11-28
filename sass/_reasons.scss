@@ -36,6 +36,14 @@
     .reasons-main-text {
         width: 50%;
         text-align: left;
+
+        h2 {
+            margin-bottom: 2rem;
+        }
+
+        p {
+            font-size: 18px;
+        }
     }
 
     .reasons-container {
@@ -46,6 +54,10 @@
             justify-content: flex-start;
             align-items: flex-start;
             gap: 2rem;
+
+            h3 {
+                font-size: 1.5rem;
+            }
         }
     }
 }
