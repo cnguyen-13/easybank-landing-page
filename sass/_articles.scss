@@ -2,6 +2,7 @@
     padding-top: 5rem;
 
     h2 {
+        text-align: center;
         margin-bottom: 2rem;
     }
 
@@ -41,6 +42,11 @@
 
 @media (min-width: 1440px) {
     .articles-content {
+        h2.h2-sub-headers {
+            text-align: left;
+            margin-bottom: 3rem;
+        }
+
         .articles-container {
             flex-direction: row;
         }
